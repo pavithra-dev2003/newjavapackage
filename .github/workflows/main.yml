@@ -39,8 +39,8 @@ jobs:
       - name: Build and push Docker image to ACR
         uses: docker/build-push-action@v2
         with:
-          context: javapackage
-          file: javapackage/Dockerfile
+          context: javapack
+          file: javapack/Dockerfile
           push: true
           tags: |
             ${{ secrets.ACR_LOGIN_SERVER }}/javemayexample:${{ github.run_number }}

@@ -20,7 +20,7 @@ jobs:
  
       - name: Build with Maven
         run: mvn clean package
-        working-directory: javapackage
+        working-directory: javapack
  
       - name: Set environment variables
         run: |
